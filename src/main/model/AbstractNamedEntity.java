@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 @Setter
 @AllArgsConstructor(access = AccessLevel.PROTECTED)
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class AbstractNamedEntity {
+public class AbstractNamedEntity extends AbstractBaseEntity {
 
     @NotBlank
     @Size(min = 3, max = 50)
